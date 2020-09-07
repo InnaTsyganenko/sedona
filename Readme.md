@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Poteryaeva Inna](https://up.htmlacademy.ru/htmlcss/29/user/1452537).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Гуляев](https://htmlacademy.ru/profile/dima).
 
 ---
 
