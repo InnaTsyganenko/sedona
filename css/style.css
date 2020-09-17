@@ -1,40 +1,40 @@
 :root {
-	/* basic */
-	--basic-light-grey: rgba(136, 136, 136, 1);
-	--basic-black: rgba(0, 0, 0, 1);
-	--basic-white: rgba(255, 255, 255, 1);
-	--basic-dark-grey: rgba(51, 51, 51, 1);
-	--basic-black-transparent: rgba(0, 0, 0, 0.3);
-	--basic-white-transparent: rgba(255, 255, 255, 0.3);
-	--basic-blue: rgba(129, 179, 210, 1);
-	--basic-brown: rgba(118, 99, 87, 1);
+  /* basic */
+  --basic-light-grey: rgba(136, 136, 136, 1);
+  --basic-black: rgba(0, 0, 0, 1);
+  --basic-white: rgba(255, 255, 255, 1);
+  --basic-dark-grey: rgba(51, 51, 51, 1);
+  --basic-black-transparent: rgba(0, 0, 0, 0.3);
+  --basic-white-transparent: rgba(255, 255, 255, 0.3);
+  --basic-blue: rgba(129, 179, 210, 1);
+  --basic-brown: rgba(118, 99, 87, 1);
 
-	/* hover */
-	--hover-brown: rgba(96, 78, 67, 1);
-	--hover-blue: rgba(102, 158, 192, 1);
+  /* hover */
+  --hover-brown: rgba(96, 78, 67, 1);
+  --hover-blue: rgba(102, 158, 192, 1);
 
-	/* onclick */
-	--onclick-brown: rgba(80, 62, 51, 1);
-	--onclick-blue: rgba(84, 150, 189, 1);
+  /* onclick */
+  --onclick-brown: rgba(80, 62, 51, 1);
+  --onclick-blue: rgba(84, 150, 189, 1);
 }
 
 @font-face {
-  font-family: 'PT Sans', Arial, sans-serif;
-	font-weight: 400;
+  font-family: 'PT Sans';
+  font-weight: 400;
   src: local('PT Sans'),
        local('PTSans'),
        url('../fonts/ptsans.woff2') format('woff2'),
        url('../fonts/ptsans.woff') format('woff');
-	font-display: swap;
+  font-display: swap;
 }
 @font-face {
-  font-family: 'PT Sans', Arial, sans-serif;
-	font-weight: 700;
+  font-family: 'PT Sans';
+  font-weight: 700;
   src: local('PT Sans'),
        local('PTSans'),
        url('../fonts/ptsansbold.woff2') format('woff2'),
        url('../fonts/ptsansbold.woff') format('woff');
-	font-display: swap;
+  font-display: swap;
 }
 
 .page-body {
@@ -48,7 +48,7 @@
   color: var(--basic-black);
   text-transform: uppercase;
   background-color: var(--basic-white);
-	text-align: center;
+  text-align: center;
 }
 
 /* по критериям нельзя использовать глобальные теги, кроме body, a, img */
@@ -96,15 +96,15 @@ img {
 
 /* promo */
 .promo {
-	font-size: 21px;
-	line-height: 26px;
+  font-size: 21px;
+  line-height: 26px;
 }
 
 /* about */
 .about {
-	font-size: 14px;
-	line-height: 26px;
-	font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
 }
 
 .about-list {
@@ -114,17 +114,19 @@ img {
 .about-list-item {
   font-size: 14px;
   line-height: 21px;
-	font-weight: 400;
+  font-weight: 400;
 }
 
-.about-list-item h3,h4 {
+.about-list-item h3,
+.about-list-item h4 {
   font-size: 21px;
   line-height: 21px;
 }
 
-.about-list-item:first-child, .about-list-item:nth-child(3)  {
+.about-list-item:first-child,
+.about-list-item:nth-child(3)  {
   color: var(--basic-white);
-	background-color: var(--basic-blue);
+  background-color: var(--basic-blue);
 }
 
 /* search form */
@@ -173,7 +175,7 @@ img {
 
 /* social */
 .social-list {
-	list-style: none;
+  list-style: none;
 }
 
 .contacts-phone {
