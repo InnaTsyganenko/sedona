@@ -13,12 +13,16 @@
       <a href="index.htm" class="main-header-logo">
         <img src="img/logo.png" width="138" height="70" alt="Логотип сайта поиска гостиницы в городе Седона">
       </a>
-      <ul class="site-navigation-list">
-        <li class="site-navigation-list-item"><a href="#">Информация</a></li>
-        <li class="site-navigation-list-item"><a href="#">Фото и видео</a></li>
-        <li class="site-navigation-list-item"><a href="#">Карта штата</a></li>
-        <li class="site-navigation-list-item"><a href="hotels.html">Гостиницы</a></li>
-      </ul>
+      <div class="main-header-bar">
+        <div class="main-navigation-wrapper">
+        <ul class="site-navigation-list">
+          <li class="site-navigation-list-item"><a href="#">Информация</a></li>
+          <li class="site-navigation-list-item"><a href="#">Фото и видео</a></li>
+          <li class="site-navigation-list-item"><a href="#">Карта штата</a></li>
+          <li class="site-navigation-list-item"><a href="hotels.html">Гостиницы</a></li>
+        </ul>
+        </div>
+      </div>
     </nav>
   </header>
 
@@ -26,8 +30,8 @@
     <h1 class="visually-hidden">Информационно-туристический сайт города Седона</h1>
     <section class="promo">
       <h2 class="visually-hidden">Добро пожаловать в Седону!</h2>
-      <img src="https://via.placeholder.com/" width="1200" height="509" alt="Красивый вид на каньоны в окрестностях Седоны">
-      <p>Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+      <img src="img/canyons-of-sedona.jpg" width="1200" height="509" alt="Красивый вид на каньоны в окрестностях Седоны">
+      <p class="promo-text">Седона - небольшой городок в Аризоне,<br>заслуживающий большего!</p>
     </section>
 
     <section class="about">
@@ -35,35 +39,39 @@
       <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-каньон!</p>
       <ul class="about-list">
         <li class="about-list-item">
-          <h3>Настоящий городок</h3>
-          <img src="https://via.placeholder.com/" width="800" height="256" alt="Фото городка Седона">
-          <p> - №1 - </p>
-          <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+          <div class="container-for-text-about-1">
+            <h3>Настоящий городок</h3>
+            <p class="about-text-number"> - №1 - </p>
+            <p class="about-text-description">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+          </div>
+          <img src="img/beautiful-sedona.jpg" width="800" height="256" alt="Фото городка Седона" class="img-about-list-item-1">
           </li>
-          <li>
-          <ul class="advantages-list">
-            <li class="advantages-list-item">
-              <h4>Жильё</h4>
-              <!-- иконку вставлю через стили -->
-              <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-            </li>
-            <li class="advantages-list-item">
-              <h4>Еда</h4>
-              <!-- иконку вставлю через стили -->
-              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-            </li>
-            <li class="advantages-list-item">
-              <h4>Сувениры</h4>
-              <!-- иконку вставлю через стили -->
-              <p>Не только китайского, но и местного производства!</p>
-            </li>
-          </ul>
+          <li class="about-list-item">
+            <ul class="advantages-list">
+              <li class="advantages-list-item">
+                <h4>Жильё</h4>
+                <!-- иконку вставлю через стили -->
+                <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              </li>
+              <li class="advantages-list-item">
+                <h4>Еда</h4>
+                <!-- иконку вставлю через стили -->
+                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </li>
+              <li class="advantages-list-item">
+                <h4>Сувениры</h4>
+                <!-- иконку вставлю через стили -->
+                <p>Не только китайского, но и местного производства!</p>
+              </li>
+            </ul>
         </li>
         <li class="about-list-item">
-          <h3>Там есть Мост дьявола</h3>
-          <img src="https://via.placeholder.com/" width="800" height="256" alt="Фото природной арки из скал под названием Мост дьявола">
-          <p> - №2 - </p>
-          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          <div class="container-for-text-about-2">
+            <h3>Там есть Мост дьявола</h3>
+            <p> - №2 - </p>
+            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </div>
+          <img src="img/devils-bridge.jpg" width="800" height="256" alt="Фото природной арки из скал под названием Мост дьявола" class="img-about-list-item-2">
         </li>
         <li class="about-list-item">
           <h3>Небольшая площадь</h3>
@@ -86,14 +94,14 @@
     <section class="form-hotel-search">
       <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
       <p><span class="hotel-search-header">Заинтересовались?</span><br>
-      Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       <button class="manage-hotel-search-button button" type="button">Поиск гостиницы в Седоне</button>
       <a href="hotels.html" class="hotel-search-button button">Найти</a>
     </section>
 
     <section class="map">
       <h2 class="visually-hidden">Седона на карте</h2>
-      <img src="https://via.placeholder.com/" width="1199" height="594" alt="Расположение Седоны на карте">
+      <img src="img/map.jpg" width="1199" height="594" alt="Расположение Седоны на карте">
     </section>
   </main>
 
@@ -117,9 +125,7 @@
     </div>
     <div class="copyright">
       <span>Website by</span>
-      <a href="https://htmlacademy.ru/intensive/htmlcss" class="button">
-        <img src="https://via.placeholder.com/" width="115" height="41" alt="Логотип-ссылка на HTMLAcademy">
-      </a>
+      <a href="https://htmlacademy.ru/intensive/htmlcss" class="button visually-hidden logo-html">Логотип-ссылка на HTMLAcademy</a>
     </div>
   </footer>
 </body>
