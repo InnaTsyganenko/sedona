@@ -18,7 +18,7 @@
             <li class="site-navigation-list-item"><a href="#">Информация</a></li>
           <li class="site-navigation-list-item"><a href="#">Фото и видео</a></li>
           <li class="site-navigation-list-item"><a href="#">Карта штата</a></li>
-          <li class="site-navigation-list-item"><a href="hotels.html">Гостиницы</a></li>
+          <li class="site-navigation-list-item"><a href="hotels.html" class="active-link">Гостиницы</a></li>
         </ul>
       </div>
     </nav>
@@ -29,7 +29,7 @@
     <section class="search-form">
       <h2 class="visually-hidden">Поиск гостиницы в Седоне по параметрам</h2>
       <fieldset class="infrastructure">
-        <legend>Инфраструктура</legend>
+        <legend>Инфраструктура:</legend>
         <input type="checkbox" id="pool" class="check-input" checked disabled>
         <label for="pool" class="check">Бассейн</label><br>
         <p>
@@ -42,7 +42,7 @@
         </p>
       </fieldset>
       <fieldset class="type-of-housing">
-        <legend>Тип жилья</legend>
+        <legend>Тип жилья:</legend>
         <input type="checkbox" id="hotel" class="check-input" checked>
         <label for="hotel" class="check">Гостиница</label><br>
         <p>
@@ -55,11 +55,11 @@
         </p>
       </fieldset>
       <fieldset class="cost">
-        <legend>Стоимость в сутки (Р)</legend>
+        <legend>Стоимость в сутки (Р):</legend>
         <div class="price-container">
           <label for="zero"></label>
           <input type="number" id="zero" placeholder="0 р" class="price price-min">
-          <span style="height: 22px; width: 0px; border: 1px solid white;"></span>
+          <span class="separator">|</span>
           <label for="three-thousand"></label>
           <input type="number" id="three-thousand" placeholder="3000 р" class="price price-max">
         </div>
@@ -91,7 +91,9 @@
       <div class="search-results-container">
         <ul class="search-results-list">
           <li class="search-results-list-item">
-            <h3 class="search-result-header">Amara Resort &amp; Spa</h3>
+            <h3 class="search-result-header">
+              <a href="#" class="search-result-href">Amara Resort &amp; Spa</a>
+            </h3>
             <img src="img/amara.jpg" width="135" height="90" alt="Фото гостиницы" class="search-result-img">
             <p class="search-result-text">Гостиница</p>
             <p  class="info-price">От 4000 Р.</p>
@@ -101,7 +103,9 @@
             <span class="rating-text">Рейтинг 8,5</span>
           </li>
           <li class="search-results-list-item">
-            <h3 class="search-result-header">Desert Quail Inn</h3>
+            <h3 class="search-result-header">
+              <a href="#" class="search-result-href">Desert Quail Inn</a>
+            </h3>
             <img src="img/desert.jpg" width="135" height="90" alt="Фото гостиницы" class="search-result-img">
             <p class="search-result-text">Мотель</p>
             <p  class="info-price">От 3000 Р.</p>
@@ -111,7 +115,9 @@
             <span class="rating-text">Рейтинг 8,9</span>
           </li>
           <li class="search-results-list-item">
-            <h3 class="search-result-header">Villas at Poco Diablo</h3>
+            <h3 class="search-result-header">
+              <a href="#" class="search-result-href">Villas at Poco Diablo</a>
+            </h3>
             <img src="img/villas.jpg" width="135" height="90" alt="Фото гостиницы" class="search-result-img">
             <p class="search-result-text">Апартаменты</p>
             <p  class="info-price">От 2000 Р.</p>

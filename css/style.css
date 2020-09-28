@@ -20,12 +20,12 @@
   --onclick-brown: rgba(80, 62, 51, 1);
   --onclick-blue: rgba(84, 150, 189, 1);
 
-/* colors for linear-gradient */
+  /* colors for linear-gradient */
 
   --lg-light-blue: rgba(106, 147, 179, 1);
   --lg-dark-grey: rgba(104, 92, 92, 1);
 
-/* others */
+  /* others */
 
   --border-grey: rgba(229, 229, 229, 1);
   --background-grey-for-raiting: rgba(242, 242, 242, 1);
@@ -64,7 +64,7 @@ body {
   text-transform: uppercase;
   background-color: var( --basic-white);
   text-align: center;
-  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2); /* ���� ��� �������� 3.6 */
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
 
 a {
@@ -96,7 +96,7 @@ img {
 
 .page {
   height: 100%;
-  background-color: var(--basic-light-grey); /* ����� ��� ��� �������� 3.6 */
+  background-color: var(--basic-light-grey);
 }
 
 .page-body {
@@ -174,13 +174,24 @@ img {
   color: var(--basic-blue);
 }
 
+.site-navigation-list-item a:active {
+  color: var(--basic-black-transparent);
+}
+
+.site-navigation-list-item .active-link {
+  color: var(--basic-brown);
+}
+
 /* promo */
 
 .promo {
-  display: grid;
-  grid-template-rows: 2fr 1fr;
   font-size: 21px;
   line-height: 26px;
+}
+
+.promo-img {
+  background-image: url("../img/canyons-of-sedona.jpg"),
+  linear-gradient(var(--lg-light-blue), var(--lg-dark-grey));
 }
 
 /* about */
@@ -372,7 +383,11 @@ img {
   margin-left: 72px;
   font-size: 16px;
   line-height: 21px;
-  padding: 24px;
+  padding: 24px 0;
+}
+
+.type-of-housing {
+  margin-left: 119px;
 }
 
 .cost {
@@ -425,13 +440,16 @@ img {
 }
 
 /* cost */
+.cost {
+  margin-left: 345px;
+}
 
 .price-container {
   width: 317px;
   height: 36px;
   background: none;
   border: 2px solid var(--basic-white);
-  border-radius: 3px;
+  border-radius: 2px;
   color: var(--basic-white);
 }
 
@@ -447,6 +465,12 @@ img {
   font-size: 0;
 }
 
+.separator {
+  color: white;
+  font-size: 26px;
+  font-weight: 400;
+}
+
 .price {
   border: none;
   outline: none;
@@ -455,6 +479,7 @@ img {
   background: none;
   color: var(--basic-white);
   text-align: center;
+  padding: 0;
 }
 
 .price::-webkit-inner-spin-button,
@@ -474,6 +499,7 @@ img {
 }
 
 .show-button {
+  margin-left: 84px;
   margin-top: 33px;
   background: none;
   border: 1px solid var(--basic-white);
@@ -484,7 +510,8 @@ img {
   border-radius: 2px;
 }
 
-.show-button:focus {
+.show-button:focus,
+.show-button:hover {
   margin-top: 33px;
   background: var(--basic-white);
   border: 1px solid var(--basic-white);
@@ -502,7 +529,7 @@ img {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  width: 158px;
+  width: 316px;
   height: 2px;
   position: absolute;
   background: var(--basic-white);
@@ -556,6 +583,9 @@ img {
 
 .sort {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
   width: 1200px;
   height: 86px;
 }
@@ -580,7 +610,7 @@ img {
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
-  text-transform: uppercase;
+  text-transform: inherit;
   color: var(--basic-black-transparent);
   text-decoration: underline dotted var(--basic-blue);
   background: none;
@@ -707,15 +737,17 @@ img {
 
 .search-results-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .search-results-list-item {
   display: grid;
-  grid-template-columns: auto auto auto 2fr auto;
-  gap: 5px 10px;
+  grid-template-columns: auto auto auto 512px auto;
+  gap: 5px 5px;
   border-bottom: 1px solid var(--border-grey);
   text-align: left;
-  padding: 10px;
+  padding: 10px 72px;
 }
 
 .search-result-img {
@@ -723,6 +755,7 @@ img {
   grid-row: 1/4;
   margin: 0 auto;
   margin-top: 5px;
+  margin-right: 19px;
 }
 
 .search-result-header {
@@ -733,6 +766,19 @@ img {
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+}
+
+.search-result-href {
+  color: var(--basic-black);
+}
+
+.search-result-href:hover,
+.search-result-href:focus {
+  color: var(--basic-blue);
+}
+
+.search-result-href:active {
+  color: var(--basic-black-transparent);
 }
 
 .search-result-text,
