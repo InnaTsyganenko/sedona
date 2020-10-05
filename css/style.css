@@ -35,6 +35,7 @@
   --border-grey: rgba(229, 229, 229, 1);
   --text-rating: rgba(102, 102, 102, 1);
   --footer-background: rgba(255, 255, 255, 0.9);
+	--for-toggle-center: rgba(171, 171, 171, 1);
 }
 
 @font-face {
@@ -310,27 +311,27 @@ img {
 }
 
 .advantages-list-item:first-child::before {
+	display: inline-grid;
   content: "";
-  display: inline-block;
   width: 75px;
   height: 72px;
-  background-image: url("../img/icon-home.png");
+  background-image: url("../img/icon-home.svg");
 }
 
 .advantages-list-item:nth-child(2)::before {
+	display: inline-grid;
   content: "";
-  display: inline-block;
   width: 75px;
   height: 70px;
-  background-image: url("../img/icon-burger.png");
+  background-image: url("../img/icon-burger.svg");
 }
 
 .advantages-list-item:nth-child(3)::before {
+	display: inline-grid;
   content: "";
-  display: inline-block;
   width: 64px;
   height: 77px;
-  background-image: url("../img/icon-gift.png");
+  background-image: url("../img/icon-gift.svg");
 }
 
 .about-list-item:nth-child(3) {
@@ -354,7 +355,7 @@ img {
 .about-list-item:nth-child(4),
 .about-list-item:nth-child(5),
 .about-list-item:nth-child(6) {
-  display: inline-block;
+  display: inline-grid;
   padding-top: 47px;
   padding-bottom: 54px;
   background-color: var(--basic-light-grey);
@@ -538,15 +539,11 @@ img {
   border: none;
   outline: none;
   background-color: var(--basic-light-grey);
-  padding: 0 10px;
+	padding: 0 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 26px;
-}
-
-::-webkit-calendar-picker-indicator {
-  display: none;
-  -webkit-appearance: none;
+	text-transform: inherit;
 }
 
 .date-input:hover {
@@ -556,7 +553,7 @@ img {
 .date-input:focus {
   background-color: var(--basic-white);
   outline: 2px solid var(--border-grey);
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 /* input type number */
@@ -603,6 +600,12 @@ img {
   padding: 0;
   background-color: var(--basic-light-grey);
   text-align: center;
+}
+
+.number-input:focus::placeholder,
+.number-input:hover::placeholder {
+  transition-duration: 0.2s;
+	font-size: 0;
 }
 
 input::-webkit-outer-spin-button,
@@ -708,7 +711,7 @@ input::-webkit-inner-spin-button {
 .check-input:not(:disabled):not(:checked) + .check:hover::before,
 .check-input:focus:not(:checked) + .check::before {
   content: '';
-  display: inline-block;
+  display: inline-flex;
   width: 27px;
   height: 23px;
   margin-right: 16px;
@@ -732,35 +735,18 @@ input::-webkit-inner-spin-button {
 }
 
 /* cost */
-.cost {
-  margin-left: 345px;
+
+.cost-label {
+	margin-bottom: -15px;
 }
 
-.price-container {
+.price-controls {
   width: 317px;
   height: 36px;
   background: none;
   border: 2px solid var(--basic-white);
   border-radius: 2px;
   color: var(--basic-white);
-}
-
-.price::placeholder {
-  color: var(--basic-white);
-  text-align: center;
-  font-size: 14px;
-  line-height: 21px;
-}
-
-.price:hover::placeholder,
-.price:focus::placeholder {
-  font-size: 0;
-}
-
-.separator {
-  color: white;
-  font-size: 26px;
-  font-weight: 400;
 }
 
 .price {
@@ -790,9 +776,69 @@ input::-webkit-inner-spin-button {
   color: var(--basic-white);
 }
 
+.price::placeholder {
+  color: var(--basic-white);
+  text-align: center;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.price:hover::placeholder,
+.price:focus::placeholder {
+	transition-duration: 0.2s;
+	font-size: 0;
+}
+
+.separator {
+  color: var(--basic-white);
+  font-size: 26px;
+  font-weight: 400;
+}
+
+/* range controls */
+
+.range-controls {
+  position: relative;
+  padding-top: 20px;
+}
+
+.range-controls .scale {
+	width: 316px;
+  height: 2px;
+  background: var(--basic-black-transparent);
+}
+
+.range-controls .bar {
+  width: 248px;
+  height: 2px;
+  background: var(--basic-white);
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid var(--basic-white);
+  background-color: #ababab;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 var(--for-toggle-center);
+  cursor: pointer;
+	outline: none;
+}
+
+.range-controls .toggle:hover,
+.range-controls .toggle:focus {
+	transform: scale(1.2);
+}
+
+/*  show-button*/
+
 .show-button {
   margin-left: 84px;
-  margin-top: 33px;
+  margin-top: 13px;
   background: none;
   border: 1px solid var(--basic-white);
   width: 137px;
@@ -804,71 +850,11 @@ input::-webkit-inner-spin-button {
 
 .show-button:focus,
 .show-button:hover {
-  margin-top: 33px;
   background: var(--basic-white);
   border: 1px solid var(--basic-white);
-  width: 137px;
-  height: 36px;
   color: var(--basic-black);
-  text-transform: uppercase;
   outline: none;
   border-radius: 2px;
-}
-
-/* slider */
-
-.slider {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  width: 316px;
-  height: 2px;
-  position: absolute;
-  background: var(--basic-white);
-  outline: none;
-}
-
-.slider input {
-  pointer-events: none;
-  position: absolute;
-  overflow: hidden;
-  left: 25%;
-  top: 15px;
-  width: 50%;
-  outline: none;
-  height: 19px;
-  margin: 0;
-  padding: 0;
-}
-
-.slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 19px;
-  height: 19px;
-  background: var(--basic-white);
-  cursor: pointer;
-  pointer-events: all;
-  position: relative;
-  z-index: 1;
-  outline: 0;
-  background-image: url("data:image/svg+xml,%3Csvg width='19' height='21' viewBox='0 0 19 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.3' d='M9.5 19.0909C4.25315 19.0909 0 14.8165 0 9.54546V11.4545C0 16.7255 4.25315 21 9.5 21C14.7459 21 19 16.7255 19 11.4545V9.54546C19 14.8165 14.7459 19.0909 9.5 19.0909Z' fill='%23ABABAB'/%3E%3Cpath d='M9.5 19.0909C14.7467 19.0909 19 14.8173 19 9.54545C19 4.27365 14.7467 0 9.5 0C4.25329 0 0 4.27365 0 9.54545C0 14.8173 4.25329 19.0909 9.5 19.0909Z' fill='white'/%3E%3Cpath d='M9.50001 11.4545C10.5493 11.4545 11.4 10.5998 11.4 9.54546C11.4 8.4911 10.5493 7.63637 9.50001 7.63637C8.45067 7.63637 7.60001 8.4911 7.60001 9.54546C7.60001 10.5998 8.45067 11.4545 9.50001 11.4545Z' fill='%23ABABAB'/%3E%3C/svg%3E%0A");
-  border-radius: 50%;
-}
-
-.slider:focus::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 23px;
-  height: 24px;
-  background: var(--basic-white);
-  cursor: pointer;
-  pointer-events: all;
-  position: relative;
-  z-index: 1;
-  outline: 0;
-  background-image: url("data:image/svg+xml,%3Csvg width='23' height='24' viewBox='0 0 23 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.3' d='M11.5 21.8182C5.14855 21.8182 0 16.9331 0 10.9091V13.0909C0 19.1149 5.14855 24 11.5 24C17.8503 24 23 19.1149 23 13.0909V10.9091C23 16.9331 17.8503 21.8182 11.5 21.8182Z' fill='%23ABABAB'/%3E%3Cpath d='M11.5 21.8182C17.8513 21.8182 23 16.934 23 10.9091C23 4.88417 17.8513 0 11.5 0C5.14873 0 0 4.88417 0 10.9091C0 16.934 5.14873 21.8182 11.5 21.8182Z' fill='white'/%3E%3Cpath d='M11.5 13.0909C12.7703 13.0909 13.8 12.1141 13.8 10.9091C13.8 9.7041 12.7703 8.72726 11.5 8.72726C10.2298 8.72726 9.20001 9.7041 9.20001 10.9091C9.20001 12.1141 10.2298 13.0909 11.5 13.0909Z' fill='%23ABABAB'/%3E%3C/svg%3E%0A");
-  border-radius: 50%;
 }
 
 /* sort */
@@ -1031,6 +1017,7 @@ input::-webkit-inner-spin-button {
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-bottom: 120px;
 }
 
 .search-results-list-item {
@@ -1088,7 +1075,7 @@ input::-webkit-inner-spin-button {
     }
 
 .info-price {
-  display: inline-block;
+  display: grid;
   grid-column: 3/3;
   grid-row: 2/2;
 
@@ -1278,7 +1265,6 @@ input::-webkit-inner-spin-button {
 }
 
 .logo-html {
-  display: block;
   width: 115px;
   height: 41px;
   margin-left: 6px;
