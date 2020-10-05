@@ -35,7 +35,7 @@
   --border-grey: rgba(229, 229, 229, 1);
   --text-rating: rgba(102, 102, 102, 1);
   --footer-background: rgba(255, 255, 255, 0.9);
-	--for-toggle-center: rgba(171, 171, 171, 1);
+  --for-toggle-center: rgba(171, 171, 171, 1);
 }
 
 @font-face {
@@ -311,7 +311,7 @@ img {
 }
 
 .advantages-list-item:first-child::before {
-	display: inline-grid;
+  display: inline-grid;
   content: "";
   width: 75px;
   height: 72px;
@@ -319,7 +319,7 @@ img {
 }
 
 .advantages-list-item:nth-child(2)::before {
-	display: inline-grid;
+  display: inline-grid;
   content: "";
   width: 75px;
   height: 70px;
@@ -327,7 +327,7 @@ img {
 }
 
 .advantages-list-item:nth-child(3)::before {
-	display: inline-grid;
+  display: inline-grid;
   content: "";
   width: 64px;
   height: 77px;
@@ -539,11 +539,11 @@ img {
   border: none;
   outline: none;
   background-color: var(--basic-light-grey);
-	padding: 0 10px;
+  padding: 0 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 26px;
-	text-transform: inherit;
+  text-transform: inherit;
 }
 
 .date-input:hover {
@@ -602,10 +602,16 @@ img {
   text-align: center;
 }
 
+.date-input::placeholder {
+  color: inherit;
+}
+
+.date-input:focus::placeholder,
+.date-input:hover::placeholder,
 .number-input:focus::placeholder,
 .number-input:hover::placeholder {
-  transition-duration: 0.2s;
-	font-size: 0;
+  transition-duration: 0.4s;
+  transform: scale(0);
 }
 
 input::-webkit-outer-spin-button,
@@ -737,7 +743,7 @@ input::-webkit-inner-spin-button {
 /* cost */
 
 .cost-label {
-	margin-bottom: -15px;
+  margin-bottom: -15px;
 }
 
 .price-controls {
@@ -785,8 +791,8 @@ input::-webkit-inner-spin-button {
 
 .price:hover::placeholder,
 .price:focus::placeholder {
-	transition-duration: 0.2s;
-	font-size: 0;
+  transition-duration: 0.2s;
+  font-size: 0;
 }
 
 .separator {
@@ -803,7 +809,7 @@ input::-webkit-inner-spin-button {
 }
 
 .range-controls .scale {
-	width: 316px;
+  width: 316px;
   height: 2px;
   background: var(--basic-black-transparent);
 }
@@ -826,12 +832,12 @@ input::-webkit-inner-spin-button {
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 var(--for-toggle-center);
   cursor: pointer;
-	outline: none;
+  outline: none;
 }
 
 .range-controls .toggle:hover,
 .range-controls .toggle:focus {
-	transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 /*  show-button*/
