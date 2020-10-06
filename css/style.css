@@ -828,9 +828,8 @@ input::-webkit-inner-spin-button {
   height: 4px;
   padding: 0;
   border: 8px solid var(--basic-white);
-  background-color: #ababab;
+  background-color: var(--for-toggle-center);
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 var(--for-toggle-center);
   cursor: pointer;
   outline: none;
 }
