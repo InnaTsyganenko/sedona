@@ -24,7 +24,7 @@
 
   /* colors for linear-gradient */
 
-	--lg-white-blue: rgba(241, 247, 250, 1);
+  --lg-white-blue: rgba(241, 247, 250, 1);
   --lg-blue: rgba(96, 138, 176, 1);
   --lg-dark-grey: rgba(104, 92, 92, 1);
   --lg-red-brown: rgba(106, 88, 88, 1);
@@ -164,11 +164,11 @@ img {
 }
 
 .site-navigation-list-item:first-child {
-	padding-left: 72px;
+  padding-left: 72px;
 }
 
 .site-navigation-list-item:last-child {
-	padding-right: 72px;
+  padding-right: 72px;
 }
 
 .site-navigation-list-item:first-child,
@@ -274,7 +274,7 @@ img {
 }
 
 .about-text-number {
-	margin-top: 23px;
+  margin-top: 23px;
   margin-bottom: 23px;
 }
 
@@ -671,7 +671,7 @@ input::-webkit-inner-spin-button {
 
 .hotel-search-button {
   display: flex;
-	flex-wrap: wrap;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   background-color: var(--basic-blue);
@@ -687,7 +687,7 @@ input::-webkit-inner-spin-button {
 .hotel-search-button:hover,
 .hotel-search-button:focus {
   background-color: var(--hover-blue);
-	outline: none;
+  outline: none;
 }
 
 .hotel-search-button:active {
@@ -699,7 +699,7 @@ input::-webkit-inner-spin-button {
 
 .search-form {
   display: flex;
-	flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 1200px;
   height: 217px;
   margin-right: 73px;
@@ -1228,9 +1228,9 @@ input::-webkit-inner-spin-button {
 /* map */
 
 .map {
-	width: 1199px;
-	height: 594px;
-	background-image: url("../img/map.jpg");
+  width: 1199px;
+  height: 594px;
+  background-image: url("../img/map.jpg");
 }
 
 /* main-footer */
@@ -1287,7 +1287,7 @@ input::-webkit-inner-spin-button {
 }
 
 .social-list-item svg {
-	margin-bottom: -4px;
+  margin-bottom: -4px;
 }
 
 .social-list-item a:hover,
