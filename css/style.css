@@ -232,6 +232,7 @@ img {
 .site-navigation-list-item a:hover,
 .site-navigation-list-item a:focus {
   color: var(--basic-blue);
+  outline: none;
 }
 
 .site-navigation-list-item a:active {
@@ -1032,17 +1033,6 @@ input::-webkit-inner-spin-button {
 }
 
 .hotel-search-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-color: var(--basic-blue);
   color: var(--basic-white);
   font-weight: 700;
@@ -1050,7 +1040,9 @@ input::-webkit-inner-spin-button {
   line-height: 26px;
   width: 458px;
   height: 58px;
-  margin: 0 auto;
+  outline: none;
+  border: none;
+  margin-top: 25px;
 }
 
 .hotel-search-button:hover,
