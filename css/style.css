@@ -594,14 +594,13 @@ img {
   width: 568px;
   height: 395px;
   margin: 0 auto;
-  position: absolute;
   z-index: 30;
   right: 0;
   left: 0;
   overflow: hidden;
 }
 
-.form-hotel-search-hide{
+.form-hotel-search-hide {
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
           transform: scale(0);
@@ -611,25 +610,29 @@ img {
 }
 
 @-webkit-keyframes show {
-  from {-webkit-transform: translateY(-400px);transform: translateY(-400px);
+  from {-webkit-transform: translateY(-400px);
+  transform: translateY(-400px);
   -webkit-transform-origin: top;
           transform-origin: top;}
 }
 
 @keyframes show {
-  from {-webkit-transform: translateY(-400px);transform: translateY(-400px);
+  from {-webkit-transform: translateY(-400px);
+  transform: translateY(-400px);
   -webkit-transform-origin: top;
           transform-origin: top;}
 }
 
 @-webkit-keyframes hide {
-  to {-webkit-transform: translateY(-400px);transform: translateY(-400px);
+  to {-webkit-transform: translateY(-400px);
+  transform: translateY(-400px);
   -webkit-transform-origin: top;
           transform-origin: top;}
 }
 
 @keyframes hide {
-  to {-webkit-transform: translateY(-400px);transform: translateY(-400px);
+  to {-webkit-transform: translateY(-400px);
+  transform: translateY(-400px);
   -webkit-transform-origin: top;
           transform-origin: top;}
 }
@@ -905,7 +908,7 @@ img {
 .number-input:hover::-webkit-input-placeholder {
   -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s;
-  font-size: 0;
+  transform: scale(0);
       }
 
 .date-input:focus::-moz-placeholder,
@@ -913,7 +916,7 @@ img {
 .number-input:focus::-moz-placeholder,
 .number-input:hover::-moz-placeholder {
   transition-duration: 0.4s;
-  font-size: 0;
+  transform: scale(0);
       }
 
 .date-input:focus:-ms-input-placeholder,
@@ -921,7 +924,7 @@ img {
 .number-input:focus:-ms-input-placeholder,
 .number-input:hover:-ms-input-placeholder {
   transition-duration: 0.4s;
-  font-size: 0;
+  transform: scale(0);
       }
 
 .date-input:focus::-ms-input-placeholder,
@@ -929,35 +932,47 @@ img {
 .number-input:focus::-ms-input-placeholder,
 .number-input:hover::-ms-input-placeholder {
   transition-duration: 0.4s;
-  font-size: 0;
+  transform: scale(0);
       }
 
-.date-input:focus::-webkit-input-placeholder, .date-input:hover::-webkit-input-placeholder, .number-input:focus::-webkit-input-placeholder, .number-input:hover::-webkit-input-placeholder {
+.date-input:focus::-webkit-input-placeholder,
+.date-input:hover::-webkit-input-placeholder,
+.number-input:focus::-webkit-input-placeholder,
+.number-input:hover::-webkit-input-placeholder {
   -webkit-transition-duration: 0.4s;
        -o-transition-duration: 0.4s;
           transition-duration: 0.4s;
-  font-size: 0;
+  transform: scale(0);
       }
 
-.date-input:focus::-moz-placeholder, .date-input:hover::-moz-placeholder, .number-input:focus::-moz-placeholder, .number-input:hover::-moz-placeholder {
+.date-input:focus::-moz-placeholder,
+.date-input:hover::-moz-placeholder,
+.number-input:focus::-moz-placeholder,
+.number-input:hover::-moz-placeholder {
   -webkit-transition-duration: 0.4s;
        -o-transition-duration: 0.4s;
           transition-duration: 0.4s;
-  font-size: 0;
+  transform: scale(0);
       }
 
-.date-input:focus:-ms-input-placeholder, .date-input:hover:-ms-input-placeholder, .number-input:focus:-ms-input-placeholder, .number-input:hover:-ms-input-placeholder {
+.date-input:focus:-ms-input-placeholder,
+.date-input:hover:-ms-input-placeholder,
+.number-input:focus:-ms-input-placeholder,
+.number-input:hover:-ms-input-placeholder {
   -webkit-transition-duration: 0.4s;
        -o-transition-duration: 0.4s;
           transition-duration: 0.4s;
-  font-size: 0;
+  transform: scale(0);
       }
 
-.date-input:focus::-ms-input-placeholder, .date-input:hover::-ms-input-placeholder, .number-input:focus::-ms-input-placeholder, .number-input:hover::-ms-input-placeholder {
+.date-input:focus::-ms-input-placeholder,
+.date-input:hover::-ms-input-placeholder,
+.number-input:focus::-ms-input-placeholder,
+.number-input:hover::-ms-input-placeholder {
   -webkit-transition-duration: 0.4s;
        -o-transition-duration: 0.4s;
           transition-duration: 0.4s;
-  font-size: 0;
+  transform: scale(0);
       }
 
 .date-input:focus::placeholder,
@@ -967,7 +982,7 @@ img {
   -webkit-transition-duration: 0.4s;
        -o-transition-duration: 0.4s;
           transition-duration: 0.4s;
-  font-size: 0;
+  transform: scale(0);
       }
 
 input::-webkit-outer-spin-button,
@@ -1235,25 +1250,25 @@ input::-webkit-inner-spin-button {
 .price:focus::-webkit-input-placeholder {
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
-  font-size: 0;
+  transform: scale(0);
 }
 
 .price:hover::-moz-placeholder,
 .price:focus::-moz-placeholder {
   transition-duration: 0.2s;
-  font-size: 0;
+  transform: scale(0);
 }
 
 .price:hover:-ms-input-placeholder,
 .price:focus:-ms-input-placeholder {
   transition-duration: 0.2s;
-  font-size: 0;
+  transform: scale(0);
 }
 
 .price:hover::-ms-input-placeholder,
 .price:focus::-ms-input-placeholder {
   transition-duration: 0.2s;
-  font-size: 0;
+  transform: scale(0);
 }
 
 .price:hover::-webkit-input-placeholder,
@@ -1261,7 +1276,7 @@ input::-webkit-inner-spin-button {
   -webkit-transition-duration: 0.2s;
        -o-transition-duration: 0.2s;
           transition-duration: 0.2s;
-  font-size: 0;
+  transform: scale(0);
 }
 
 .price:hover::-moz-placeholder,
@@ -1269,7 +1284,7 @@ input::-webkit-inner-spin-button {
   -webkit-transition-duration: 0.2s;
        -o-transition-duration: 0.2s;
           transition-duration: 0.2s;
-  font-size: 0;
+  transform: scale(0);
 }
 
 .price:hover:-ms-input-placeholder,
@@ -1277,7 +1292,7 @@ input::-webkit-inner-spin-button {
   -webkit-transition-duration: 0.2s;
        -o-transition-duration: 0.2s;
           transition-duration: 0.2s;
-  font-size: 0;
+  transform: scale(0);
 }
 
 .price:hover::-ms-input-placeholder,
@@ -1285,35 +1300,39 @@ input::-webkit-inner-spin-button {
   -webkit-transition-duration: 0.2s;
        -o-transition-duration: 0.2s;
           transition-duration: 0.2s;
-  font-size: 0;
+  transform: scale(0);
 }
 
-.price:hover::-webkit-input-placeholder, .price:focus::-webkit-input-placeholder {
+.price:hover::-webkit-input-placeholder,
+.price:focus::-webkit-input-placeholder {
   -webkit-transition-duration: 0.2s;
        -o-transition-duration: 0.2s;
           transition-duration: 0.2s;
-  font-size: 0;
+  transform: scale(0);
 }
 
-.price:hover::-moz-placeholder, .price:focus::-moz-placeholder {
+.price:hover::-moz-placeholder,
+.price:focus::-moz-placeholder {
   -webkit-transition-duration: 0.2s;
        -o-transition-duration: 0.2s;
           transition-duration: 0.2s;
-  font-size: 0;
+  transform: scale(0);
 }
 
-.price:hover:-ms-input-placeholder, .price:focus:-ms-input-placeholder {
+.price:hover:-ms-input-placeholder,
+.price:focus:-ms-input-placeholder {
   -webkit-transition-duration: 0.2s;
        -o-transition-duration: 0.2s;
           transition-duration: 0.2s;
-  font-size: 0;
+  transform: scale(0);
 }
 
-.price:hover::-ms-input-placeholder, .price:focus::-ms-input-placeholder {
+.price:hover::-ms-input-placeholder,
+.price:focus::-ms-input-placeholder {
   -webkit-transition-duration: 0.2s;
        -o-transition-duration: 0.2s;
           transition-duration: 0.2s;
-  font-size: 0;
+  transform: scale(0);
 }
 
 .price:hover::placeholder,
@@ -1321,7 +1340,7 @@ input::-webkit-inner-spin-button {
   -webkit-transition-duration: 0.2s;
        -o-transition-duration: 0.2s;
           transition-duration: 0.2s;
-  font-size: 0;
+  transform: scale(0);
 }
 
 .separator {
@@ -1871,7 +1890,7 @@ input::-webkit-inner-spin-button {
   padding: 0;
 }
 
-.social-list-item a {
+.social-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1894,12 +1913,12 @@ input::-webkit-inner-spin-button {
   border: none;
 }
 
-.social-list-item a:hover,
-.social-list-item a:focus {
+.social-button:hover,
+.social-button:focus {
   background-color: var(--hover-blue);
 }
 
-.social-list-item a:active path {
+.social-button:active path {
   background-color: var(--onclick-blue);
   fill: var(--basic-white-transparent);
 }
@@ -1915,6 +1934,8 @@ input::-webkit-inner-spin-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+   -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
