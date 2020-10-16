@@ -22,8 +22,6 @@ if (countAdultsStorage || countChildrenStorage) {
     inputNumber[1].value = countChildrenStorage;
 }
 
-inputArrivalDate.focus();
-
 formManageButton.addEventListener("click", function () {
   if (formContainer.classList.contains("form-animation-show") == false && formContainer.classList.contains("form-animation-hide") == false) {
     formContainer.classList.add("form-animation-hide");
