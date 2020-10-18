@@ -337,7 +337,7 @@ img {
 .about-text-number {
   line-height: 21px;
   margin-top: 25px;
-  margin-bottom: 27px;
+  margin-bottom: 25px;
 }
 
 .about-text-description {
@@ -378,7 +378,7 @@ img {
   grid-row: 1/1;
   -ms-grid-row-align: start;
       align-self: start;
-  margin-top: 26px;
+  margin-top: 24px;
 }
 
 .img-about-list-item-1 {
@@ -514,7 +514,7 @@ img {
   grid-row: 1/1;
   -ms-grid-row-align: start;
       align-self: start;
-  margin-top: 30px;
+  margin-top: 26px;
 }
 
 .about-list-item:nth-child(4),
@@ -522,7 +522,7 @@ img {
 .about-list-item:nth-child(6) {
   display: -ms-inline-grid;
   display: inline-grid;
-  padding-top: 27px;
+  padding-top: 24px;
   padding-bottom: 54px;
   background-color: var(--basic-light-grey);
 }
@@ -563,7 +563,7 @@ img {
 .hotel-search-header {
   font-size: 30px;
   line-height: 24px;
-  margin-bottom: 34px;
+  margin-bottom: 30px;
 }
 
 .hotel-search-text {
@@ -581,7 +581,7 @@ img {
   height: 86px;
   outline: none;
   border: none;
-  margin-top: 32px;
+  margin-top: 30px;
 }
 
 .manage-hotel-search-button:hover,
@@ -1874,6 +1874,10 @@ input::-webkit-inner-spin-button {
 
 .contacts-phone {
   color: inherit;
+}
+
+.contacts-phone:focus {
+  outline: none;
 }
 
 /* social */
