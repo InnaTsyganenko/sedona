@@ -27,7 +27,7 @@ formManageButton.addEventListener("click", function () {
     formContainer.classList.add("form-animation-hide");
   } else {
     formContainer.classList.toggle("form-animation-show");
-  inputArrivalDate.focus();
+    inputArrivalDate.focus();
     formContainer.classList.toggle("form-animation-hide");
   }
   form.classList.toggle("form-hotel-search-hide");
@@ -36,6 +36,10 @@ formManageButton.addEventListener("click", function () {
 form.addEventListener("submit", function (evt) {
   if (!inputDate[0].value || !inputDate[1].value || !inputNumber[0].value || !inputNumber[1].value || inputNumber[0].value == 0) {
     evt.preventDefault();
+    formContainer.classList.remove("form-animation-show");
+    formContainer.classList.remove("form-hotel-search-error");
+    formContainer.offsetWidth = formContainer.offsetWidth;
+    formContainer.classList.add("form-hotel-search-error");
   } else {
     if (isStorageSupport) {
       localStorage.setItem("countAdults", inputNumber[0].value);
