@@ -10,6 +10,9 @@ let isStorageSupport = true;
 let countAdultsStorage = "";
 let countChildrenStorage = "";
 
+formContainer.classList.add("form-animation-hide");
+form.classList.toggle("form-hotel-search-hide");
+
 try {
   countAdultsStorage = localStorage.getItem("countAdults");
   countChildrenStorage = localStorage.getItem("countChildren");
@@ -23,14 +26,16 @@ if (countAdultsStorage || countChildrenStorage) {
 }
 
 formManageButton.addEventListener("click", function () {
-  if (formContainer.classList.contains("form-animation-show") == false && formContainer.classList.contains("form-animation-hide") == false) {
-    formContainer.classList.add("form-animation-hide");
-  } else {
-    formContainer.classList.toggle("form-animation-show");
+  if (formContainer.classList.contains("form-animation-hide") == true) {
+    form.classList.toggle("form-hotel-search-hide");
+    formContainer.classList.remove("form-animation-hide");
     inputArrivalDate.focus();
-    formContainer.classList.toggle("form-animation-hide");
+    formContainer.classList.add("form-animation-show");
+  } else {
+    formContainer.classList.remove("form-animation-show");
+    formContainer.classList.add("form-animation-hide");
+    form.classList.toggle("form-hotel-search-hide");
   }
-  form.classList.toggle("form-hotel-search-hide");
 });
 
 form.addEventListener("submit", function (evt) {
