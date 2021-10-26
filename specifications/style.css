@@ -1,0 +1,32 @@
+html {
+  height: 100%;
+  width: 100%; }
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  outline: none; }
+
+body {
+  height:100%;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+  color: #000000;
+  background-color: #faf0e6;
+  margin: 0;
+  min-width: 1000px;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent; }
+
+.page__main {
+  width: 40%;
+  margin: 30px auto;
+  box-shadow: 0px 0px 5px 3px rgb(68 68 68 / 50%);
+  padding: 3%;
+  background-color: #f2f0ee;
+  }
